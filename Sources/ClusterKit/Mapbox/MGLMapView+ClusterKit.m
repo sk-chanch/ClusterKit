@@ -22,7 +22,7 @@
 
 #import <objc/runtime.h>
 
-#import "MGLMapView+ClusterKit.h"
+#import "ClusterKit/MGLMapView+ClusterKit.h"
 
 MGLCoordinateBounds MGLCoordinateIncludingCoordinate(MGLCoordinateBounds bounds, CLLocationCoordinate2D coordinate) {
     

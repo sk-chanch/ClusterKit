@@ -13,13 +13,14 @@ let package = Package(
             targets: ["ClusterKit"])
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/maplibre/maplibre-gl-native-distribution", .upToNextMinor(from: "5.13.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "ClusterKit"
+            name: "ClusterKit",
+            dependencies: [.product(name: "Mapbox", package: "maplibre-gl-native-distribution")]
         ),
     ]
 )

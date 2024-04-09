@@ -6,4 +6,9 @@ module ClusterKit {
         header "ClusterKit/MKMapView+ClusterKit.h"
         export *
     }
+    
+    explicit module Mapbox {
+        header "ClusterKit/MGLMapView+ClusterKit.h"
+        export *
+    }
 }
